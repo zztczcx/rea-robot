@@ -13,7 +13,7 @@ module ReaRobot
 
     def process(command_string)
       case command_string
-      when /\APLACE\s+(?<x>\d+),\s+(?<y>\d+),\s+(?<direction>\w+)\Z/
+      when /\APLACE\s*(?<x>\d+),\s*(?<y>\d+),\s*(?<direction>\w+)\Z/
         [:place, $~[:x].to_i, $~[:y].to_i, $~[:direction]]
       when /\AMOVE\Z/
         [:move]

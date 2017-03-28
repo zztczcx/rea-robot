@@ -37,11 +37,11 @@ module ReaRobot
     end
 
     def left
-      @direction = DIRECTIONS[DIRECTIONS.index(@direction) - 1]
+      @direction = DIRECTIONS[(DIRECTIONS.index(@direction) - 1) % 4]
     end
 
     def right
-      @direction = DIRECTIONS[DIRECTIONS.index(@direction) + 1]
+      @direction = DIRECTIONS[(DIRECTIONS.index(@direction) + 1) % 4]
     end
 
     def report
