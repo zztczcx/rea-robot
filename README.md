@@ -1,4 +1,4 @@
-# REA Rot
+# REA Robot
 
 ## Usage
 
@@ -15,6 +15,6 @@
 
 ## tips for list of commands
 
-- PLACE will put the robot on the table, and make sure it will ready to roam
+- PLACE will put the robot on the table, and make sure it will be ready to roam
 
 - if there is any invalid command in the test file, it will raise an error and stop the program
